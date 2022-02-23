@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               flex: 2,
               child: Container(
-                color: Colors.purple[100],
+            color: Colors.indigo[100],
                 child: GridView.builder(
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 4,
@@ -89,6 +89,7 @@ class _HomePageState extends State<HomePage> {
                         buttonTapped: () {
                           setState(() {
                             userQuestion = "";
+                            userAnswer = "";
                           });
                         },
                         buttonText: buttons[index],
